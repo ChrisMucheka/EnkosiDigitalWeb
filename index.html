@@ -52,24 +52,49 @@
 </head>
 
 <body data-spy="scroll" data-target=".mainmenu-area">
-    
+    <!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v6.0'
+          });
+        };
+
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <!-- Your customer chat code -->
+      <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="487572941710789">
+      </div>
+
     <!--Preloader-->
     <div class="preloader">
         <div class="spinner"></div>
     </div>
 
     <!-- Mainmenu-Area -->
-    <nav class="navbar mainmenu-area" data-spy="affix" data-offset-top="197" >
+    <nav class="navbar mainmenu-area" data-spy="affix" data-offset-top="197">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">
                     <div class="navbar-header smoth">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainmenu">
+                      <a class="navbar-brand" href="#home-area">
+            <img src="images/logo.png" style="border-radius: 10px;padding-bottom:10px;"  class="logo" alt=""></a>   
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainmenu">
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span> 
                         </button>
-        <a class="navbar-brand" href="#home-area"><img src="images/logo.png" style="border-radius: 10px;padding-bottom:10px;"  class="logo" alt=""></a>
+      
                     </div>
                     <div class="collapse navbar-collapse navbar-right" id="mainmenu">
                         
@@ -128,8 +153,8 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-6 col-md-5">
                     <div class="page-title">
-                        <h2 class="title wow fadeInUp">About EnkosiDigital</h2>
-                        <div class="wow fadeInUp" data-wow-delay="0.5s">
+                        <h2 class="title wow fadeInUp" style="visibility: visible;">About EnkosiDigital</h2>
+                        <div class="wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible;">
 <p>EnkosiDigital Pty Ltd is a Data and IT company that is located in Lusikisiki and Mthatha , Eastern  Cape in South Africa we offer businesses solutions in data analysis, business intelligence, software development, data warehousing, and data mining. We enable your business to grow using technology and data. We specialise in IT services, Data Analytics and Business intelligence solution. We provide innovative solution that helps business to improve, make informed decision and work in an efficient manner using technology and data. We use mathematics, statistical methods and computer science techniques to create solution which uses technology and data to solve real world problems.
  </p>
 <p>We strive to, not only offer advanced technology solution for our clients, but to support upcoming innovators and ongoing changes in the industry due to the rapid changes in the technological world.
@@ -329,13 +354,13 @@
 
 
 
-    <!--section class="section-padding gray-bg"-->
+    <section class="section-padding gray-bg">
         <div class="container" >
-            <div class="row" ">
+            <div class="row">
             
                 <div class="col-xs-12 col-sm-6" id="about"><br/><br/><br/>
                     <div class="video-box" >
-<iframe width="620" height="445" src="https://www.youtube.com/embed/DVkamtxtH6E">
+<iframe style="width:100%" height="445" src="https://www.youtube.com/embed/DVkamtxtH6E">
 </iframe>
                       
                     </div>
@@ -449,7 +474,7 @@ cutting edge technology services at reasonable and competitive prices.</p>
                         </div>
                     </div>
                     <section>
-   <div class="col-xs-12 col-sm-6 col-md-5 col-md-offset-1 wow fadeInUp">
+   <div class="col-xs-12 col-sm-6 col-md-5 col-md-offset-1 wow fadeInUp" style="visibility: visible;">
                     <div class="page-title">
                         <h2 class="title"></h2>
                         <ul class="tabs-list-2">
@@ -461,7 +486,7 @@ cutting edge technology services at reasonable and competitive prices.</p>
                     <div class="tab-content">
                         <div id="cape" class="tab-pane fade in active">
                             <h4 class="upper thing"></h4>
-                          <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d1699.1048980677856!2d28.769632018412505!3d-31.600710627457005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x1e5fd0cbb339cd23%3A0x82176ae6f1990721!2s12+Finch+St%2C+Southernwood%2C+Mthatha%2C+5100!3m2!1d-31.6006148!2d28.770720999999998!5e0!3m2!1sen!2sza!4v1547047176703" width="590" height="410" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+                          <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d1699.1048980677856!2d28.769632018412505!3d-31.600710627457005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x1e5fd0cbb339cd23%3A0x82176ae6f1990721!2s12+Finch+St%2C+Southernwood%2C+Mthatha%2C+5100!3m2!1d-31.6006148!2d28.770720999999998!5e0!3m2!1sen!2sza!4v1547047176703"  frameborder="0" style="border:0;width:100%;height:410px" allowfullscreen=""></iframe>
 <ul>
 <li>Address</li>
 <li>180 Manzolwandle</li>
@@ -485,14 +510,14 @@ cutting edge technology services at reasonable and competitive prices.</p>
                         </div>
                       </div>
                 </div>
-            </div>
-        </div>
+          
+        
 </section>
 
                     </div>
                 </div>
             </div>
-        </div>
+        
     </section>
     <!-- Contact-Area / -->
     <div id="clear"><br/><br/><br/></div>
